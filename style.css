@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: white;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+header img {
+    max-width: 200px;
+    height: auto;
+}
+
+.dsvy-title-bar-content {
+    padding-left: 50px ;
+    padding-top: 20px;
+    bottom: -9px;
+    content: '';
+    position: static;
+    left: -370px;
+    height: 45px;
+    width: 1304px;
+    clip-path: polygon(0 0,100% 0%,98% 100%,0% 100%);
+    background-color: #ba0412;
+    z-index: -1;
+}
+
+.dsvy-breadcrumb, .dsvy-breadcrumb a {
+    font-family: Montserrat,sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #fff;
+    text-transform: none;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titulo {
+    color: #ba0412;
+    font-size: 54px;
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+}
+
+.sectionFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
