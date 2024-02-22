@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-02-2024 a las 00:12:57
+-- Tiempo de generación: 23-02-2024 a las 00:33:09
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -37,16 +37,17 @@ CREATE TABLE `reservas` (
   `scenary` varchar(50) NOT NULL,
   `date` date NOT NULL,
   `time` varchar(10) NOT NULL,
-  `terms` varchar(30) NOT NULL
+  `terms` varchar(30) NOT NULL,
+  `status` varchar(20) DEFAULT 'Pendiente'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `reservas`
 --
 
-INSERT INTO `reservas` (`name`, `lastname`, `identification`, `email`, `phone`, `sport`, `scenary`, `date`, `time`, `terms`) VALUES
-('Oscar', 'Castro', 1234567890, 'test1@gmail.com', 2147483647, 'LevantamientoPesas', 'ColiseoNorton', '2024-02-29', '', 'on'),
-('prueba  dos Oscar', 'test', 2147483647, 'test2@test.com', 2147483647, 'LevantamientoPesas', 'ColiseoNorton', '2024-02-26', '', 'on');
+INSERT INTO `reservas` (`name`, `lastname`, `identification`, `email`, `phone`, `sport`, `scenary`, `date`, `time`, `terms`, `status`) VALUES
+('Oscar', 'Castro', 1234567890, 'test1@gmail.com', 2147483647, 'LevantamientoPesas', 'ColiseoNorton', '2024-02-29', '', 'on', 'Pendiente'),
+('prueba  dos Oscar', 'test', 2147483647, 'test2@test.com', 2147483647, 'LevantamientoPesas', 'ColiseoNorton', '2024-02-26', '', 'on', 'Pendiente');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
